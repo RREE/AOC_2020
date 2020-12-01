@@ -20,7 +20,7 @@ procedure AoC_2020_01 is
 
    procedure Get_Input
    is
-      Input_Filename : constant string := "input.txt";
+      Input_Filename : constant string := "input_01.txt";
       Input_File     : File_Type;
       E : Expense;
    begin
@@ -50,7 +50,7 @@ begin
                Product := Outer * Inner;
                Ada.Text_IO.Put_Line
                  (Outer'Image & " +" & Inner'Image &
-                    " = 2020," & Outer'Image & " x" & Inner'Image & " =" & Product'Image);
+                    " = 2020," & Outer'Image & " *" & Inner'Image & " =" & Product'Image);
             end if;
          end;
       end loop Inner_Loop;

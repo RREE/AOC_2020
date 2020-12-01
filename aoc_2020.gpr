@@ -1,0 +1,5 @@
+project AOC_2020 is
+    for Source_Dirs use ("src/**");
+    for Object_Dir use "obj";
+    for Main use ("aoc_2020_01.adb");
+end AOC_2020;

@@ -3,7 +3,6 @@ with Ada.Integer_Text_IO;         use Ada.Integer_Text_IO;
 
 procedure Aoc_2020_02_2 is
 
-
    Max_Pw_Length : constant := 900; -- maximum number of characters in a password
 
    subtype Char_Count is Integer range 0 .. Max_Pw_Length;
@@ -29,12 +28,10 @@ begin
 
          Min := Min + Last + 4;
          Max := Max + Last + 4;
-         if Min <= Line'Last and then
-           Max <= Line'Last and then
-           ((Check_Char = Line (Min) and then Check_Char /= Line (Max)) or else
-              (Check_Char /= Line (Min) and then Check_Char = Line (Max)))
+         if Min <= Line'Last and then Max <= Line'Last and then
+           (Check_Char = Line (Min) xor Check_Char = Line (Max))
          then
-            Valid_Passwords := Valid_Passwords + 1;
+            Valid_Passwords := @ + 1;
          end if;
          --  Ada.Text_IO.Put_Line ("min:" & Min'Image & ", max:" & Max'Image & ", c: " & Check_Char
          --                          & ", #val:"& Valid_Passwords'Image
@@ -48,5 +45,5 @@ begin
 
 exception
    when Name_Error =>
-   Ada.Text_Io.Put_Line ("file not found: '" & Input_Filename & "'");
+   Ada.Text_IO.Put_Line ("file not found: '" & Input_Filename & "'");
 end Aoc_2020_02_2;

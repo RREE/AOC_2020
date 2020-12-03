@@ -1,6 +1,6 @@
 with Ada.Text_IO;                 use Ada.Text_IO;
 with Ada.Integer_Text_IO;         use Ada.Integer_Text_IO;
-with ada.containers 
+ 
 procedure AoC_2020_03 is
 
    Input_Filename : constant string := "input_03.txt";
@@ -8,9 +8,8 @@ procedure AoC_2020_03 is
 
    -- type Cell_Status_T is (Open, Tree);
 
-   Map_Width_Modulo : constant := 32;
+   Map_Width_Modulo : constant := 31;
    Map_Height       : Natural := 0;
-   -- subtype Str32 is String (1 .. 32);
    type Map_Width is mod Map_Width_Modulo;
   
    --  package Map_Lines_Lists is new Ada.Containers.Vectors (Natural, Str32);

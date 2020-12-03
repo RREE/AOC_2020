@@ -2,5 +2,6 @@ project AOC_2020 is
    for Source_Dirs use (".");
    for Object_Dir use "obj";
    for Main use ("aoc_2020_01.adb", "aoc_2020_01_2.adb", 
-                 "aoc_2020_02.adb", "aoc_2020_02_2.adb");
+                 "aoc_2020_02.adb", "aoc_2020_02_2.adb",
+                 "aoc_2020_03.adb", "aoc_2020_03_2.adb");
 end AOC_2020;

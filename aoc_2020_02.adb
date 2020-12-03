@@ -1,3 +1,5 @@
+pragma Ada_2020;
+
 with Ada.Text_IO;                 use Ada.Text_IO;
 with Ada.Integer_Text_IO;         use Ada.Integer_Text_IO;
 
@@ -36,7 +38,7 @@ begin
          end loop;
 
          --  if Min <= Check_Count and then Check_Count <= Max then
-		 if Check_Count in Min .. Max then
+                 if Check_Count in Min .. Max then
             Valid_Passwords := @ + 1;
          end if;
 

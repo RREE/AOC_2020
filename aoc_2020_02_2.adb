@@ -1,3 +1,5 @@
+pragma Ada_2020;
+
 with Ada.Text_IO;                 use Ada.Text_IO;
 with Ada.Integer_Text_IO;         use Ada.Integer_Text_IO;
 
@@ -17,9 +19,9 @@ begin
    while not End_Of_File (Input_File) loop
       Analyze:
       declare
-         Line : constant String := Get_Line (Input_File);
-         Min, Max : Char_Count;
-         Last : Char_Count;
+         Line       : constant String := Get_Line (Input_File);
+         Min, Max   : Char_Count;
+         Last       : Char_Count;
          Check_Char : Character;
       begin
          Get (Line, Min, Last);

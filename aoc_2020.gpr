@@ -5,6 +5,7 @@ project AOC_2020 is
                  "aoc_2020_02.adb", "aoc_2020_02_2.adb",
                  "aoc_2020_03.adb", "aoc_2020_03_2.adb",
                  "aoc_2020_04.adb", "aoc_2020_04_2.adb",
-                 "aoc_2020_05.adb", "aoc_2020_05_2.adb"
+                 "aoc_2020_05.adb", "aoc_2020_05_2.adb",
+                 "aoc_2020_06.adb", "aoc_2020_06_2.adb"
                 );
 end AOC_2020;
